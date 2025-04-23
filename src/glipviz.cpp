@@ -204,7 +204,7 @@ int getParams(ros::NodeHandle nh)
   }
 
   nh.getParam("glipviz/points",pointsTopic);
-  if (contoursTopic.size()!=0) {
+  if (pointsTopic.size()!=0) {
     sub4 = nh.subscribe(pointsTopic, 1, pointsCallback);
     params++;
   }
