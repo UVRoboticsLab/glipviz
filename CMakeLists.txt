@@ -18,6 +18,7 @@ find_package(catkin REQUIRED COMPONENTS
 # find_package(Boost REQUIRED COMPONENTS system)
 
 #GLUT libraries
+set(OpenGL_GL_PREFERENCE GLVND)
 find_package(GLUT REQUIRED)
 find_package(OpenGL REQUIRED)
 include_directories(${GLUT_INCLUDE_DIRS})
